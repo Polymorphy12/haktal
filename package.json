@@ -2,7 +2,7 @@
   "name": "haktal",
   "version": "0.0.1",
   "private": true,
-  "rnpm":{
+  "rnpm": {
     "assets": [
       "./assets/fonts/"
     ]
@@ -13,6 +13,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "jetifier": "^1.6.1",
     "react": "16.8.6",
     "react-native": "0.60.0",

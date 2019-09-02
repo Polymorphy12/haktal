@@ -6,6 +6,8 @@ import logIn from "./logIn/logIn";
 import restaurantGrid from "./order/restaurantGrid";
 import Menu from "./order/menu";
 import MenuDetails from "./order/menuDetails";
+import ShoppingCart from "./order/shoppingCart";
+import LocationSet from "./order/locationSet";
 
 const App = createStackNavigator(
   {
@@ -15,7 +17,9 @@ const App = createStackNavigator(
     logIn: { screen: logIn},
     restaurantGrid: {screen: restaurantGrid},
     menu: {screen: Menu},
-    menuDetails: {screen: MenuDetails}
+    menuDetails: {screen: MenuDetails},
+    shoppingCart: {screen: ShoppingCart},
+    locationSet: {screen: LocationSet}
   },
   {initialRouteName: "Home", headerMode: "none"}
 );

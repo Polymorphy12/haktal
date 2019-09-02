@@ -35,6 +35,13 @@ export default class restaurantGrid extends Component {
         });
       }
 
+      handleDecrease = () => {
+      
+        this.setState({
+          data: this.state.data.splice( this.state.data.length + 1 )
+        });
+      }
+
       render() {
 
         const {navigation } = this.props;
@@ -60,7 +67,7 @@ export default class restaurantGrid extends Component {
                     <Text>점심</Text>
                   </TouchableOpacity>
                   
-                  <TouchableOpacity style={toggleDinner}>
+                  <TouchableOpacity style={toggleDinner} onPress={this.handleDecrease}>
                     <Text>저녁</Text>
                   </TouchableOpacity>
                 </View>
